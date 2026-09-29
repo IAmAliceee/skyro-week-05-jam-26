@@ -1,7 +1,7 @@
 using Alice.Input;
 using UnityEngine;
 
-namespace Alice
+namespace Alice.Input
 {
     public class InputManager : MonoBehaviour
     {

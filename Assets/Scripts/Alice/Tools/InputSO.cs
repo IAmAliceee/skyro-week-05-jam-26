@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 
 namespace Alice.Input
 {
+    [CreateAssetMenu(fileName = "Input", menuName = "Alice/Input")]
     public class InputSO : ScriptableObject, IDisposable
     {
         private Dictionary<Action<InputAction.CallbackContext>, InputActionType> registeredInputs = new();
@@ -73,5 +74,7 @@ namespace Alice.Input
                     break;
             }
         }
+
+        public T ReadValue<T>() where T : struct => inputAction.action.ReadValue<T>();
     }
 }
