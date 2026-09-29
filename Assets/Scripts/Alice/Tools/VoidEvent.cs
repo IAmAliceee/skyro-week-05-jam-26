@@ -8,7 +8,7 @@ namespace Alice.Events
     {
         private event Action OnEventRaised;
 
-        public void Raise() => OnEventRaised?.Invoke();
+        public void Invoke() => OnEventRaised?.Invoke();
 
         public void Sub(Action listener) => OnEventRaised += listener;
         public void Unsub(Action listener) => OnEventRaised -= listener;
@@ -23,7 +23,7 @@ namespace Alice.Events
 
             manuallyInvokeEvent = false;
 
-            Raise();
+            Invoke();
         }
 
 #endif

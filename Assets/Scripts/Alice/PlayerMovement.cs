@@ -7,7 +7,10 @@ namespace Alice.Movement
 {
     public class PlayerMovement : MonoBehaviour
     {
+        [Header("Inputs")]
         [SerializeField] private InputSO moveInput;
+
+        [Header("Variables")]
         [SerializeField] private FloatVariable playerSpeed;
 
         [Header("Events")]
@@ -24,7 +27,7 @@ namespace Alice.Movement
             if(!movementEnabled) return;
 
             var moveDisplacement = Vector3.right * (moveInput.ReadValue<Vector2>().x * playerSpeed * Time.deltaTime);
-            transform.position = transform.position + moveDisplacement;
+            transform.position += moveDisplacement;
         }
     }
 }
