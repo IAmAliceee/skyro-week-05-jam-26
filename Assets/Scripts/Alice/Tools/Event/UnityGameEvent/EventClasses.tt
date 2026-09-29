@@ -1,0 +1,22 @@
+<#@ template language="C#" #>
+<#
+var types = new[] {
+    ("Bool", "bool"),
+    ("Int", "int"),
+    ("Float", "float"),
+    ("Vector2", "UnityEngine.Vector2"),
+    ("Vector3", "UnityEngine.Vector3"),
+    ("String", "string"),
+    // add more here
+};
+#>
+using UnityEngine;
+
+namespace AliceCore.Events
+{
+<# for (var i = 0; i < types.Length; i++) {
+    var t = types[i];
+    #>
+    [CreateAssetMenu(fileName = "<#= t.Item1 #>Event", menuName = "Alice/Events/<#= t.Item1 #>", order = <#= i+1 #> )] public sealed class <#= t.Item1 #>Event : GameEvent<<#= t.Item2 #>> {}
+<# } #>
+}

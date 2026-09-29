@@ -441,6 +441,11 @@ GameObject:
   - component: {fileID: 606016066}
   - component: {fileID: 606016068}
   - component: {fileID: 606016069}
+<<<<<<< Updated upstream
+=======
+  - component: {fileID: 606016071}
+  - component: {fileID: 606016070}
+>>>>>>> Stashed changes
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -729,6 +734,83 @@ MonoBehaviour:
   moveInput: {fileID: 11400000, guid: fd57bee0238fcfc8995da8b5a8cc8b93, type: 2}
   playerSpeed: {fileID: 11400000, guid: bebac83de8d883d94a0b81ada1bea237, type: 2}
   setMovementOn: {fileID: 11400000, guid: 78d099346e1c0ec7d8cdf82905956c03, type: 2}
+<<<<<<< Updated upstream
+=======
+--- !u!114 &606016070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 606016063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74c102a3c7e7be136ba41b0dfb59b24d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Alice.Events.UnityGameEventBool
+  gameEvent: {fileID: 11400000, guid: 2b3e48ecebb0649e7bce0ebeaec6e7ed, type: 2}
+  unityEventTrue:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 606016066}
+        m_TargetAssemblyTypeName: UnityEngine.Rigidbody2D, UnityEngine
+        m_MethodName: set_gravityScale
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 1
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  unityEventFalse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 606016066}
+        m_TargetAssemblyTypeName: UnityEngine.Rigidbody2D, UnityEngine
+        m_MethodName: set_gravityScale
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 606016066}
+        m_TargetAssemblyTypeName: UnityEngine.Rigidbody2D, UnityEngine
+        m_MethodName: set_linearVelocityY
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &606016071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 606016063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 859553f63aa54136e912efdbfe51bee5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Alice.Movement.PlayerDash
+  rb: {fileID: 606016066}
+  moveInput: {fileID: 11400000, guid: fd57bee0238fcfc8995da8b5a8cc8b93, type: 2}
+  dashInput: {fileID: 11400000, guid: c67851855684cbec69ee37736cfc3be6, type: 2}
+  dashCooldown: {fileID: 11400000, guid: 11a65b08ec29acebe8109031acc4cedb, type: 2}
+  dashDuration: {fileID: 11400000, guid: 52dcf1621b4e909a28a4698516695beb, type: 2}
+  dashSpeed: {fileID: 11400000, guid: ea743c3f944625b25bc042a320565e44, type: 2}
+  SetGravityOn: {fileID: 11400000, guid: 2b3e48ecebb0649e7bce0ebeaec6e7ed, type: 2}
+>>>>>>> Stashed changes
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
